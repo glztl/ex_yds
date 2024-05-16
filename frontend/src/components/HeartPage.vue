@@ -1,8 +1,11 @@
 <template>
     <div class="heart_container">
-        <div class="content">
-            <CirclePart />
-            <RatePart />
+        <div class="heart_content">
+            <div class="heart_chart">
+                <CirclePart />
+                <RatePart />
+            </div>
+            <HeartTable />
         </div>
     </div>
 </template>
@@ -10,11 +13,13 @@
 <script>
 import RatePart from './HeartRate.vue'
 import CirclePart from './HeartCircle.vue'
+import HeartTable from './HeartTable.vue'
 
 export default {
     components: {
         RatePart,
-        CirclePart
+        CirclePart,
+        HeartTable
     }
 }
 
@@ -22,9 +27,13 @@ export default {
 
 
 <style>
-.content {
+.heart_content {
   display: flex;
-  justify-content: space-between; /* 使子组件在父容器中均匀分布 */
+  flex-direction: column; /* 使子组件在父容器中均匀分布 */
+}
+.heart_chart {
+    display: flex;
+    justify-content: space-between;
 }
 
 </style>

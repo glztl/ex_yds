@@ -4,11 +4,12 @@
         <router-link to="/" class="Title">SNN</router-link>
       </div>
       <div class="NavBar">
-        <router-link to="/introduction" class="NavItem">📕模型介绍</router-link>
-        <router-link to="/gradio" class="NavItem">🚀模型使用</router-link>
+        <!-- <router-link to="/introduction" class="NavItem">📕模型介绍</router-link> -->
+        <router-link to="/gradio" class="NavItem">🚀使用</router-link>
+        <router-link to="/realtime" class="NavItem">🦉实时监测</router-link>
         <router-link to="/statistics" class="NavItem">📊数据统计</router-link>
-        <router-link to="/heart" class="NavItem">⌚心率分析</router-link>
-        <router-link to="/" class="NavItem">🏃‍健康状况</router-link>
+        <router-link to="/heart" class="NavItem">💕心率分析</router-link>
+        <router-link to="/statistics" class="NavItem">🏃‍健康状况</router-link>
         <router-link to="/settings" class="NavItem">⚙设置</router-link>
       </div>
     </div>
@@ -22,13 +23,13 @@
   
 <style scoped>
   .Banner {
-  background-color:#F6F8FA;
+  background-color:#F5F5F7;
   color: #232D36;
   height: 80px; /* Adjusted height to accommodate the navigation bar */
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: #232D36 solid 2px;
+  /* border-bottom: #232D36 solid 2px; */
 }
 .Title {
     margin-left: 45px;

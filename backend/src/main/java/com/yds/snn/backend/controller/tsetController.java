@@ -59,4 +59,26 @@ public class tsetController {
         return userList;
     }
 
+    @GetMapping(value = "/heartList")
+    public List<Map<String, Object>> getHeart() {
+        List<Map<String, Object>> userList = new ArrayList<>();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
+        // 创建一个 Date 实例，代表当前时间
+        Date currentDate = new Date();
+
+        // 使用 SimpleDateFormat 格式化日期时间
+        String formattedDateTime = sdf.format(currentDate);
+
+        for (int i = 0; i < 5; i++) {
+            Map<String, Object> map = new HashMap<>();
+            map.put("name", "test-00" + i);
+            map.put("contact", "123456789-" + i);
+            map.put("time", formattedDateTime);
+            map.put("status", "完成");
+            userList.add(map);
+        }
+        return userList;
+    }
+
 }

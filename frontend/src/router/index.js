@@ -4,11 +4,16 @@ import Usage from '../components/UsagePage.vue';
 import Heart from '../components/HeartPage.vue';
 import Rate from '../components/HeartRate.vue';
 import Circle from '../components/HeartCircle.vue';
+import Htable from '../components/HeartTable.vue';
 import Statistics from '../components/StatisticsPage.vue';
 import Settings from '../components/SettingsPage.vue';
 import Gradio from '../components/GradioPage.vue';
 import Index from '../components/IndexPage.vue';
 import Part from '../components/PartPage.vue';
+import Schart from '../components/StatisticsChart.vue';
+import Schart2 from '../components/StatisticsChart2.vue';
+import Stable from '../components/StatisticsTable.vue';
+import Realtime from '../components/RealTimePage.vue';
 
 const routes = [
   {
@@ -36,6 +41,10 @@ const routes = [
     component: Circle
   },
   {
+    path: '/htable',
+    component: Htable
+  },
+  {
     path: '/settings',
     component: Settings
   },
@@ -46,6 +55,22 @@ const routes = [
   {
     path: '/part',
     component: Part
+  },
+  {
+    path: '/schart',
+    component: Schart
+  },
+  {
+    path: '/schart2',
+    component: Schart2
+  },
+  {
+    path: '/stable',
+    component: Stable
+  },
+  {
+    path: '/realtime',
+    component: Realtime
   },
   {
     path: '/index',
